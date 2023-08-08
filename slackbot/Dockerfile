@@ -6,7 +6,7 @@ COPY . .
 RUN go get -v
 RUN go build main.go
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 RUN apk add --no-cache ca-certificates
 
